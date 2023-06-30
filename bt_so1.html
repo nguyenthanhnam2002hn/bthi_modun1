@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [4,2,8,3,9,6]
+    function point(arr) {
+        for (let i = 0 ; i < arr.length;i++) {
+            for (let j = arr.length ; i < j ;j--) {
+                if (arr[i] > arr[j]) {
+                    let temp = arr[i] ;
+                    arr[i] = arr[j] ;
+                    arr[j] = temp
+                }
+            }
+        }
+        return arr
+    }
+    document.write(point(arr))
+    vitri = arr[arr.length-3]
+    document.write("số lớn thứ 3 trong mảng là :" + vitri)
+
+
+
+
+
+
+</script>
+</body>
+</html>

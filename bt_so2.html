@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr, index) {
+        let arrAr = arr.length;
+        if (index >= arrAr) {
+            return arr;
+        }
+        let result = [];
+        for (let i = 0; i < arrAr; i++) {
+            if (i !== index) {
+                result[result.length] = arr[i];
+            }
+        }
+        return result;
+    }
+    let arr = [1, 2, 3, 4, 5];
+    let index = 2;
+    let mod = tryRemoveFromArray(arr, index);
+    document.write(mod);
+</script>
+</body>
+</html>

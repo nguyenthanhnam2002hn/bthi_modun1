@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = [2,3,4,5,6,7]
+    let str2 = [2,3,4]
+    function thamso(str1,str2) {
+        str1.split(",")
+        str2.split(",")
+        let count = 0
+        for (let i = 0; i < str1.length; i++) {
+            for (let j = 0; j < str2.length; j++) {
+                if (str2[j] === str1[i]) {
+                    count +=1
+                }
+            }
+        }
+        return count
+        if (count = str2.length) {
+            document.write(str2 + " " + "nằm trong" + " " + str1)
+        }
+        else {
+            document.write(str2 + " " + "không nằm trong" + " " + str1)
+        }
+    }
+    document.write(thamso(str1,str2))
+</script>
+</body>
+</html>
